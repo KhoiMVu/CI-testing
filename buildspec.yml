@@ -23,4 +23,4 @@ artifacts:
   files:
     - gotests
     - sum
-  discard-paths: no
+  discard-paths: yes
