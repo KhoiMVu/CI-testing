@@ -8,6 +8,7 @@ phases:
       - go test gotests/
       - echo Creating Binaries
       - go install gotests
+      - go build gotests/sum.go
   pre_build:
     commands:
       - echo "Running binary 'gotests'"
@@ -17,8 +18,10 @@ phases:
       - echo Build completed
       - pwd
       - echo $GOPATH
+      - ls -l
 artifacts:
   files:
     - gotests
+    - sum
     - '**/*'
   discard-paths: no
