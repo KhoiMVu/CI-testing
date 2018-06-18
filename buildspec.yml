@@ -10,8 +10,8 @@ phases:
       - go install gotests
   pre_build:
     commands:
-      - 
-      -
+      - echo "Running binary 'gotests'"
+      - ./gotests
   post_build:
     commands:
       - echo Build completed
