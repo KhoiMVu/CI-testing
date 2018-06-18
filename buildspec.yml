@@ -25,4 +25,4 @@ artifacts:
   files:
     - gotests
     - sum
-  discard-paths: yes
+  discard-paths: no
