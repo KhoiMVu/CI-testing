@@ -10,6 +10,7 @@ phases:
       - go install gotests
       - go build gotests/sum.go
       - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+      - go get github.com/TrustedKeep/kmip
   pre_build:
     commands:
       - echo "Running binary 'gotests'"
