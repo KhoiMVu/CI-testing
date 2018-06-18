@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo Build started
-      - echo "Compiling"
+      - echo "Running go tests"
       - go test gotests/
       - echo Creating Binaries
       - go install gotests
