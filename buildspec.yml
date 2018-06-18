@@ -9,6 +9,8 @@ phases:
       - echo Creating Binaries
       - go install gotests
       - go build gotests/sum.go
+      - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+      - dep -help
   pre_build:
     commands:
       - echo "Running binary 'gotests'"
