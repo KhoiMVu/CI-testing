@@ -10,11 +10,11 @@ phases:
       - go install gotests
       - go build gotests/sum.go
       - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-      - dep ensure
   pre_build:
     commands:
       - echo "Running binary 'gotests'"
       - go run gotests/sum.go
+      - dep ensure
   post_build:
     commands:
       - echo Build completed
