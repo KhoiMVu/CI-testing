@@ -3,18 +3,20 @@ version: 0.2
 phases: 
   install:
     commands:
-      - echo Build started on `date`
+      - echo Build started
       - echo "Compiling"
       - go test gotests/
+      - echo Creating Binaries
+      - go install gotests
   pre_build:
     commands:
       - 
       -
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed
 artifacts:
   files:
-    - test
+    - gotests
     - '**/*'
   discard-paths: no
