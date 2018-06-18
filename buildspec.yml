@@ -14,13 +14,14 @@ phases:
     commands:
       - echo "Running binary 'gotests'"
       - go run gotests/sum.go
+      - echo *******Info
+      - pwd
+      - echo $GOPATH
+      - ls -l
       - dep ensure
   post_build:
     commands:
       - echo Build completed
-      - pwd
-      - echo $GOPATH
-      - ls -l
 artifacts:
   files:
     - gotests
