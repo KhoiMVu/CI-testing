@@ -1,0 +1,154 @@
+# Gopkg.toml example
+#
+# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# for detailed Gopkg.toml documentation.
+#
+# required = ["github.com/user/thing/cmd/thing"]
+# ignored = ["github.com/user/project/pkgX", "bitbucket.org/user/project/pkgA/pkgY"]
+#
+# [[constraint]]
+#   name = "github.com/user/project"
+#   version = "1.0.0"
+#
+# [[constraint]]
+#   name = "github.com/user/project2"
+#   branch = "dev"
+#   source = "github.com/myfork/project2"
+#
+# [[override]]
+#   name = "github.com/x/y"
+#   version = "2.4.0"
+#
+# [prune]
+#   non-go = false
+#   go-tests = true
+#   unused-packages = true
+
+
+[[constraint]]
+  name = "github.com/BurntSushi/toml"
+  version = "0.3.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/TrustedKeep/kmip"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/TrustedKeep/osslutil"
+
+[[constraint]]
+  name = "github.com/aws/aws-sdk-go"
+  version = "1.13.32"
+
+[[constraint]]
+  name = "github.com/cloudfoundry/gosigar"
+  version = "1.1.0"
+
+[[constraint]]
+  name = "github.com/coreos/etcd"
+  version = "3.3.5"
+
+[[constraint]]
+  name = "github.com/coreos/go-iptables"
+  version = "0.3.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/dustin/go-humanize"
+
+[[constraint]]
+  name = "github.com/gogo/protobuf"
+  version = "1.0.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/golang/gddo"
+
+[[constraint]]
+  name = "github.com/golang/protobuf"
+  version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/gorilla/websocket"
+  version = "1.2.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/hashicorp/go-uuid"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/hashicorp/golang-lru"
+
+[[constraint]]
+  name = "github.com/hashicorp/vault"
+  version = "0.9.6"
+
+[[constraint]]
+  branch="master"
+  name = "github.com/julienschmidt/httprouter"
+
+[[constraint]]
+  name = "github.com/klauspost/cpuid"
+  version = "1.1.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/martinlindhe/base36"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/mattetti/filebuffer"
+
+[[constraint]]
+  name = "github.com/muesli/cache2go"
+  version = "0.1.0"
+
+[[constraint]]
+  name = "github.com/nicksnyder/go-i18n"
+  version = "1.10.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/ochapman/godmi"
+
+[[constraint]]
+  name = "github.com/onsi/gomega"
+  version = "1.3.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/prometheus/common"
+
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "1.0.5"
+
+[[constraint]]
+  name = "go.uber.org/zap"
+  version = "1.7.1"
+
+[[constraint]]
+  branch = "master"
+  name = "golang.org/x/crypto"
+
+[[constraint]]
+  branch = "master"
+  name = "golang.org/x/net"
+
+[[constraint]]
+  name = "gopkg.in/yaml.v2"
+  version = "2.2.1"
+
+[prune]
+  go-tests = true
+  unused-packages = true
+
+[[constraint]]
+  name = "google.golang.org/grpc"
+  version = "1.7.5"
+
+[[constraint]]
+  name = "github.com/TrustedKeep/trustedkms"
+  branch = "develop"
