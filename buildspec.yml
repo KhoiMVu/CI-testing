@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    SRC_DIR: /src/github.com/KhoiMVu/CI-pipeline
+    SRC_DIR: src/github.com/KhoiMVu/CI-testing
     #S3_BUCKET:
 
 phases: 
@@ -16,7 +16,7 @@ phases:
 
       - echo Build started
       - echo "Running go tests"
-      - go test gotests/
+      - go test ${CODEBUILD_SRC_DIR}/gotests/
       - echo Creating Binaries
       - go install gotests
       - go build gotests/sum.go
