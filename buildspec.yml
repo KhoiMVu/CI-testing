@@ -3,11 +3,14 @@ version: 0.2
 env:
   variables:
     SRC_DIR: /go/src/github.com/KhoiMVu/CI-pipeline
+    #S3_BUCKET:
 
 phases: 
   install:
     commands:
       - ls
+      - echo CODEBUILD_SRC_DIR - $CODEBUILD_SRC_DIR
+      - echo GOPATH - $GOPATH
       - echo Build started
       - echo "Running go tests"
       - go test gotests/
