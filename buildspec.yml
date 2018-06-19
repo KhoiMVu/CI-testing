@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    SRC_DIR: /src/github.com/KhoiMVu/CI-pipeline
+    SRC_DIR: src/github.com/KhoiMVu/CI-pipeline
     #S3_BUCKET:
 
 phases: 
