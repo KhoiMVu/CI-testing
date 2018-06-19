@@ -39,5 +39,5 @@ phases:
 artifacts:
   files:
     - gotests
-    - sum
+    #- sum
   discard-paths: no
