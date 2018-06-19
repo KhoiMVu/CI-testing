@@ -16,7 +16,7 @@ phases:
 
       - echo Build started
       - echo "Running go tests"
-      - go test ${SRC_DIR}/gotests/
+      - go test gotests/
       - echo Creating Binaries
       - go install gotests
       - go build gotests/sum.go
