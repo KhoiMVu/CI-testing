@@ -33,8 +33,6 @@ phases:
       - pwd
       - echo $GOPATH
       - ls -l
-      - dep init
-      - dep ensure
   post_build:
     commands:
       - echo Build completed
