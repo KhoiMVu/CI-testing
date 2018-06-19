@@ -1,8 +1,13 @@
 version: 0.2
 
+env:
+  variables:
+    SRC_DIR: /go/src/github.com/KhoiMVu/CI-pipeline
+
 phases: 
   install:
     commands:
+      - ls
       - echo Build started
       - echo "Running go tests"
       - go test gotests/
