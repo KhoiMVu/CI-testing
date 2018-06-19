@@ -16,7 +16,7 @@ phases:
 
       - echo Build started
       - echo "Running go tests"
-      - go test gotests/
+      - go test ${SRC_DIR}/gotests/
       - echo Creating Binaries
       - go install gotests
       - go build gotests/sum.go
@@ -41,4 +41,4 @@ artifacts:
   files:
     - gotests
     - sum
-  discard-paths: no
+  discard-paths: yes
