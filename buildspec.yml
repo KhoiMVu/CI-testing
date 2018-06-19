@@ -8,6 +8,7 @@ env:
 phases: 
   install:
     commands:
+      - pwd
       - ls
       - echo CODEBUILD_SRC_DIR - $CODEBUILD_SRC_DIR
       - ls $CODEBUILD_SRC_DIR
