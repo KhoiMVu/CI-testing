@@ -12,7 +12,8 @@ phases:
       - echo CODEBUILD_SRC_DIR - $CODEBUILD_SRC_DIR
       - ls $CODEBUILD_SRC_DIR
       - echo GOPATH - $GOPATH
-      - ls $GOPATH
+      - ls $SRC_DIR
+
       - echo Build started
       - echo "Running go tests"
       - go test gotests/
