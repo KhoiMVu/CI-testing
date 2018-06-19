@@ -36,8 +36,8 @@ phases:
   post_build:
     commands:
       - echo Build completed
-artifacts:
-  files:
-    - gotests
-    #- sum
-  discard-paths: no
+# artifacts:
+#   files:
+#     - gotests
+#     #- sum
+#   discard-paths: no
