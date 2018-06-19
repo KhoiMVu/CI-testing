@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    SRC_DIR: /src/github.com/KhoiMVu/CI-testing
+    SRC_DIR: src/github.com/KhoiMVu/CI-testing
     #S3_BUCKET:
 
 phases: 
